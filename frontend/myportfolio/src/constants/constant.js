@@ -1,4 +1,4 @@
-const navLinks = [
+export const navLinks = [
   {
     href: "#home",
     label: "Home",
