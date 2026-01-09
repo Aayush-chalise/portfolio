@@ -1,14 +1,14 @@
 export const navLinks = [
   {
-    href: "#home",
+    slug: "/",
     label: "Home",
   },
   {
-    href: "#contacts",
+    slug: "/contacts",
     label: "Contacts",
   },
   {
-    href: "#resume",
+    slug: "/resume",
     label: "Resume",
   },
 ];
