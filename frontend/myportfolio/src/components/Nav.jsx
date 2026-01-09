@@ -1,4 +1,6 @@
 import React from "react";
+import { navLinks } from "../constants/constant";
+import { Links } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -6,7 +8,9 @@ const Nav = () => {
       <nav className="flex flex-wrap justify-between items-center">
         <div>aayush</div>
         <ul>
-          <li>Home</li>
+          {navLinks.map((item) => {
+            <li>{item.label}</li>;
+          })}
         </ul>
       </nav>
     </header>
