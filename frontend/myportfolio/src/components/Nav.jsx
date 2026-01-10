@@ -8,10 +8,10 @@ const Nav = () => {
       <nav className="flex flex-wrap justify-between items-center     max-w-3xl  xl:max-w-5xl lg:max-w-4xl mx-auto">
         <div>aayush</div>
         <div className="hidden md:flex">
-          <ul className="flex    gap-8 ">
+          <ul className="flex    gap-16 ">
             {navLinks.map((item) => (
               <li key={item.label}>
-                <Link>{item.label}</Link>
+                <Link to={item.slug}>{item.label}</Link>
               </li>
             ))}
           </ul>
