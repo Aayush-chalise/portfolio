@@ -1,12 +1,7 @@
 import Nav from "./components/Nav";
-import "./styles/index.css";
-import { BrowserRouter } from "react-router-dom";
+import "./index.css";
 function App() {
-  return (
-    <BrowserRouter>
-      <Nav></Nav>
-    </BrowserRouter>
-  );
+  return <Nav></Nav>;
 }
 
 export default App;

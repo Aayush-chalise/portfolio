@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <header className="w-full  fixed  z-10  px-4 py-7  border border-black/10">
-      <nav className="flex flex-wrap justify-between items-center     max-w-3xl  xl:max-w-5xl lg:max-w-4xl mx-auto">
+      <nav className="flex flex-wrap justify-between items-center     max-w-3xl  xl:max-w-5xl lg:max-w-4xl mx-auto  font-dm-sans">
         <div>aayush</div>
         <div className="hidden md:flex">
           <ul className="flex    gap-16 ">
