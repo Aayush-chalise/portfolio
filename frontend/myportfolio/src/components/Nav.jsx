@@ -29,7 +29,13 @@ const Nav = () => {
 
       {isMenuOpen && (
         <div>
-          <a href="sms:+9779847407423">Send SMS</a>
+          <ul>
+            {navLinks?.map((item) =>{
+              <li>
+                <a href = "#">{item.label}</a>
+              </li>
+            })}
+          </ul>
         </div>
       )}
     </header>
