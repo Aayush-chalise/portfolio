@@ -19,3 +19,12 @@
   --font-montserrat: "Montserrat";
   --font-dm-sans: "DM Sans";
 }
+
+.grid-bg {
+  background-color: #fffbf1;
+
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.08) 2px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 2px, transparent 1px);
+  background-size: 40px 40px;
+}
