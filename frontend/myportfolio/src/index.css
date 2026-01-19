@@ -24,7 +24,12 @@
   background-color: #fffbf1;
 
   background-image:
-    linear-gradient(rgba(148, 163, 184, 0.08) 2px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 2px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(rgba(148, 163, 184, 0.08) 1.5px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1.5px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+@font-face {
+  font-family: "sunday";
+  src: url("./assets/fonts/Sundayromanticdemo-Wy7a9.otf");
 }

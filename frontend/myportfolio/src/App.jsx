@@ -1,13 +1,12 @@
-import React from "react";
 import Nav from "./components/Nav";
-import Home from "./sections/Home";
 import "./index.css";
+import LandingPage from "./sections/LandingPage";
 
 const App = () => {
   return (
     <>
       <Nav />
-      <Home />
+      <LandingPage />
     </>
   );
 };
