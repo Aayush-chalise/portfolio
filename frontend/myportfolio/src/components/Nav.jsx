@@ -13,7 +13,7 @@ const Nav = () => {
         <div className="hidden md:flex">
           <ul className="flex  gap-22 ">
             <li>
-              <a href="#">Home</a>
+              <a href="#">Work</a>
             </li>
             <li>
               <a href="#contacts">Contacts</a>
@@ -40,7 +40,7 @@ const Nav = () => {
         <div>
           <ul className="flex flex-col     gap-6 mt-6 ">
             <li>
-              <a href="#">Home</a>
+              <a href="#">Work</a>
             </li>
             <li>
               <a href="#contacts">Contacts</a>
