@@ -10,46 +10,46 @@ const LandingPage = () => {
         {/* Green arc */}
         <div className="arc arc-green absolute bottom-0 left-0 origin-bottom-left rotate-[180deg]" />
 
-        <div className="px-2  ">
-          <span className="bg-white ">Design x Logic x Fun</span>
+        <div className="px-2   flex flex-col justify-center items-center">
+          <span className="bg-white  font-montserrat p-1 rounded-md mb-6 text-theme-green font-semibold text-sm">
+            Design x Logic x Fun
+          </span>
 
-          <p
-            className="
-            text-8xl
-                font-dm-serif
-                text-theme-green
-                text-[clamp(3rem,4vw,5.5rem)]
-                leading-[1.05]
-                tracking-[-0.02em]
-                gap-2 font-medium
-                px-4 flex flex-col  justify-center items-center  
-              "
+          <div
+            className=" 
+          
+             font-dm-serif
+             text-theme-green
+             text-[clamp(4rem,5vw,7rem)]
+             leading-[1.05]
+             tracking-[-0.02em]
+              font-medium
+             px-4 flex flex-col justify-center items-center"
           >
-            <span> Hi. I'm Aayush. </span>
-            <span>A software developer.</span>
-            <div className="font-montserrat">
-              <span className="text-2xl">
-                {" "}
-                who loves mixing logic and creativity
-              </span>
-              <span className="text-2xl">
-                {""} to craft clean, impactful applications.
-              </span>
+            <span>Hi. I'm Aayush.</span>
+            <span className="mt-3">A software developer.</span>
+            <div className="font-montserrat text-[20px] mt-7">
+              <span>who loves mixing logic and creativity</span>
+              <span> to craft clean, impactful applications.</span>
             </div>
-          </p>
+          </div>
+          <div className="flex mt-2 gap-4 p-3 text-theme-green font-dm-sans text-sm mt-7">
+            <p className="border border-theme-green rounded-md px-2 py-0.5">
+              FRONTEND
+            </p>
+            <p className="border border-theme-green rounded-md px-2 py-0.5">
+              BACKEND
+            </p>
+            <p className="border border-theme-green rounded-md px-2 py-0.5">
+              BACKEND
+            </p>
+          </div>
+          <div>
+            <button className="border font-montserrat  border-theme-green  px-6 py-2 rounded-full font-semibold text-sm bg-[#222222] text-white mt-20">
+              Explore Projects
+            </button>
+          </div>
         </div>
-
-        {/* <div className="flex mt-2 gap-4 p-3 text-theme-green font-dm-sans text-sm">
-          <p className="border border-theme-green rounded-md px-2 py-0.5">
-            FRONTEND
-          </p>
-          <p className="border border-theme-green rounded-md px-2 py-0.5">
-            BACKEND
-          </p>
-          <p className="border border-theme-green rounded-md px-2 py-0.5">
-            BACKEND
-          </p>
-        </div> */}
       </div>
     </main>
   );
