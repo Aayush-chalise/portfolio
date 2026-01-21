@@ -33,3 +33,13 @@
   font-family: "sunday";
   src: url("./assets/fonts/Sundayromanticdemo-Wy7a9.otf");
 }
+
+/* global.css */
+.dots-bg {
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+}
