@@ -16,7 +16,7 @@ const Nav = () => {
               <a href="#">Work</a>
             </li>
             <li>
-              <a href="#contacts">Contacts</a>
+              <a href="#contacts">About me</a>
             </li>
             <li>
               <a href="Aayush_Chalise.pdf" target="_blank">

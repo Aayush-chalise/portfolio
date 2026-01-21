@@ -13,7 +13,7 @@
 }
 
 @theme {
-  --color-theme-green: #265f56;
+  --color-theme-green: #02594e;
   --color-bg-color: #fffbf1;
   --font-dm-serif: "DM Serif Display";
   --font-montserrat: "Montserrat";
@@ -43,27 +43,26 @@
   );
   background-size: 20px 20px;
 }
-
 .arc {
   position: absolute;
   width: 140px;
   height: 140px;
-  border-radius: 100%;
-  z-index: 20;
+  border-radius: 50%;
+  z-index: 10;
 }
 
-/* top-right orange arc */
+/* ORANGE */
 .arc-orange {
-  border: 22px solid #ff6b57;
+  border: 20px solid #ff6b57;
   border-left-color: transparent;
   border-bottom-color: transparent;
   transform: translate(50%, -50%);
 }
 
-/* bottom-left green arc */
+/* GREEN */
 .arc-green {
-  border: 22px solid #00a884;
+  border: 20px solid #00a884;
   border-right-color: transparent;
   border-top-color: transparent;
-  transform: translate(-50%, 50%);
+  transform: translate(-38%, 38%);
 }
