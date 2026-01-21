@@ -12,13 +12,13 @@ const Nav = () => {
         <div>aayush</div>
         <div className="hidden md:flex">
           <ul className="flex  gap-22 ">
-            <li>
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="#">Work</a>
             </li>
-            <li>
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="#contacts">About me</a>
             </li>
-            <li>
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="Aayush_Chalise.pdf" target="_blank">
                 Resume
               </a>
@@ -39,13 +39,13 @@ const Nav = () => {
       {isMenuOpen && (
         <div>
           <ul className="flex flex-col     gap-6 mt-6 ">
-            <li>
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="#">Work</a>
             </li>
-            <li>
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="#contacts">Contacts</a>
             </li>
-            <li>
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="Aayush_Chalise.pdf" target="_blank">
                 Resume
               </a>
