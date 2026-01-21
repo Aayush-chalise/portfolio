@@ -43,3 +43,27 @@
   );
   background-size: 20px 20px;
 }
+
+.arc {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  z-index: 20;
+}
+
+/* top-right orange arc */
+.arc-orange {
+  border: 22px solid #ff6b57;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  transform: translate(50%, -50%);
+}
+
+/* bottom-left green arc */
+.arc-green {
+  border: 22px solid #00a884;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: translate(-50%, 50%);
+}

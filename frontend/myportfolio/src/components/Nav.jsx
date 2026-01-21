@@ -7,7 +7,7 @@ import { IoCloseOutline } from "react-icons/io5";
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="w-full     z-10  px-3 py-7  border border-black/10 bg-bg-color font-medium">
+    <header className="w-full     z-10  px-3 py-7 fixed  border border-black/10 bg-bg-color font-medium">
       <nav className="flex flex-wrap justify-between items-center     max-w-3xl  xl:max-w-6xl lg:max-w-4xl mx-auto  font-dm-sans">
         <div>aayush</div>
         <div className="hidden md:flex">
