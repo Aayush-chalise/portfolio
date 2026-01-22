@@ -1,60 +1,68 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { IoMenuOutline } from "react-icons/io5";
-import { IoCloseOutline } from "react-icons/io5";
+import React, { useState } from "react";
+import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 
-const Nav = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const navLinks = [
+  { href: "#", label: "Work" },
+  { href: "#about", label: "About Me" },
+  { href: "Aayush_Chalise.pdf", label: "Resume", external: true },
+];
+
+export default function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="w-full     z-40  px-3 py-7 fixed  border border-black/10 bg-bg-color font-medium">
-      <nav className="flex flex-wrap justify-between items-center     max-w-3xl  xl:max-w-6xl lg:max-w-4xl mx-auto  font-dm-sans">
-        <div>aayush</div>
-        <div className="hidden md:flex">
-          <ul className="flex  gap-22 ">
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="#">Work</a>
-            </li>
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="#contacts">About me</a>
-            </li>
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="Aayush_Chalise.pdf" target="_blank">
-                Resume
+    <header className="fixed top-0 left-0 w-full z-50 bg-bg-color border-b border-black/10 px-4 py-4">
+      <nav className="max-w-6xl mx-auto flex items-center justify-between font-medium">
+        <a className="text-lg font-bold text-theme-green" href="#">
+          Aayush
+        </a>
+        <ul className="hidden md:flex gap-6">
+          {navLinks.map((link) => (
+            <li key={link.label}>
+              <a
+                href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
+                className="px-3 py-2 rounded-full hover:bg-[#C1D6C3] transition-colors"
+              >
+                {link.label}
               </a>
             </li>
-          </ul>
-        </div>
-        <div className="md:hidden">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? (
-              <IoCloseOutline size={24} />
-            ) : (
-              <IoMenuOutline size={24} />
-            )}
-          </button>
-        </div>
+          ))}
+        </ul>
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden p-2"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          {menuOpen ? (
+            <IoCloseOutline size={28} />
+          ) : (
+            <IoMenuOutline size={28} />
+          )}
+        </button>
       </nav>
-
-      {isMenuOpen && (
-        <div>
-          <ul className="flex flex-col     gap-6 mt-6 ">
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="#">Work</a>
-            </li>
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="#contacts">About me</a>
-            </li>
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="Aayush_Chalise.pdf" target="_blank">
-                Resume
-              </a>
-            </li>
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden fixed inset-0 z-40 bg-bg-color/95 pt-20">
+          <ul className="flex flex-col items-center gap-8">
+            {navLinks.map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
+                  onClick={() => setMenuOpen(false)}
+                  className="px-6 py-3 rounded-full hover:bg-[#C1D6C3] text-lg"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       )}
     </header>
   );
-};
-
-export default Nav;
+}
