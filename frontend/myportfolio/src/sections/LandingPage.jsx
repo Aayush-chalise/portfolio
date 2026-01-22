@@ -11,7 +11,7 @@ const LandingPage = () => {
         <div className="arc arc-green absolute bottom-0 left-0 origin-bottom-left rotate-[180deg]" />
 
         <div className="px-2   flex flex-col justify-center items-center">
-          <span className="bg-white  font-montserrat p-1 rounded-md mb-6 text-theme-green font-semibold text-sm">
+          <span className="bg-white  font-montserrat p-2 rounded-md mb-6 text-theme-green font-semibold text-sm hidden xl:block ">
             Design x Logic x Fun
           </span>
 
@@ -24,16 +24,22 @@ const LandingPage = () => {
              leading-[1.05]
              tracking-[-0.02em]
               font-medium
-             px-4 flex flex-col justify-center items-center"
+             px-4      "
           >
-            <span>Hi. I'm Aayush.</span>
-            <span className="mt-3">A software developer.</span>
-            <div className="font-montserrat text-[20px] mt-7">
-              <span>who loves mixing logic and creativity</span>
-              <span> to craft clean, impactful applications.</span>
+            <h2 className="">
+              <span className="flex justify-center items-center">
+                Hi. I'm Aayush.
+              </span>
+              A software developer.
+            </h2>
+            <div className="font-montserrat text-[20px] mt-7   flex justify-center items-center">
+              <p>
+                who loves mixing logic and creativity to craft clean, impactful
+                applications.
+              </p>
             </div>
           </div>
-          <div className="flex mt-2 gap-4 p-3 text-theme-green font-dm-sans text-sm mt-7">
+          <div className="flex gap-4 p-3 text-theme-green font-dm-sans text-sm mt-7">
             <p className="border border-theme-green rounded-md px-2 py-0.5">
               FRONTEND
             </p>
@@ -45,7 +51,7 @@ const LandingPage = () => {
             </p>
           </div>
           <div>
-            <button className="border font-montserrat  border-theme-green  px-6 py-2 rounded-full font-semibold text-sm bg-[#222222] text-white mt-20">
+            <button className="border font-montserrat  hover:bg-[#4C6763] border-theme-green  px-6 py-2 rounded-full font-semibold text-sm bg-[#222222] text-white mt-20">
               Explore Projects
             </button>
           </div>
