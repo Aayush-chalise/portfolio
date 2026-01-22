@@ -1,68 +1,61 @@
 import React, { useState } from "react";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 
-const navLinks = [
-  { href: "#", label: "Work" },
-  { href: "#about", label: "About Me" },
-  { href: "Aayush_Chalise.pdf", label: "Resume", external: true },
-];
-
-export default function NavBar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Nav = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-bg-color border-b border-black/10 px-4 py-4">
-      <nav className="max-w-6xl mx-auto flex items-center justify-between font-medium">
-        <a className="text-lg font-bold text-theme-green" href="#">
-          Aayush
-        </a>
-        <ul className="hidden md:flex gap-6">
-          {navLinks.map((link) => (
-            <li key={link.label}>
-              <a
-                href={link.href}
-                target={link.external ? "_blank" : undefined}
-                rel={link.external ? "noopener noreferrer" : undefined}
-                className="px-3 py-2 rounded-full hover:bg-[#C1D6C3] transition-colors"
-              >
-                {link.label}
+    <header className="w-full z-40 px-3 py-5 sm:py-7 fixed border border-black/10 bg-bg-color font-medium">
+      <nav className="flex flex-wrap justify-between items-center max-w-full sm:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto font-dm-sans">
+        <div className="text-lg sm:text-xl">aayush</div>
+        <div className="hidden md:flex">
+          <ul className="flex gap-6 sm:gap-8">
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
+              <a href="#">Work</a>
+            </li>
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
+              <a href="#contacts">About me</a>
+            </li>
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
+              <a href="Aayush_Chalise.pdf" target="_blank">
+                Resume
               </a>
             </li>
-          ))}
-        </ul>
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden p-2"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          {menuOpen ? (
-            <IoCloseOutline size={28} />
-          ) : (
-            <IoMenuOutline size={28} />
-          )}
-        </button>
+          </ul>
+        </div>
+        <div className="md:hidden">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {isMenuOpen ? (
+              <IoCloseOutline size={24} />
+            ) : (
+              <IoMenuOutline size={24} />
+            )}
+          </button>
+        </div>
       </nav>
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden fixed inset-0 z-40 bg-bg-color/95 pt-20">
-          <ul className="flex flex-col items-center gap-8">
-            {navLinks.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  target={link.external ? "_blank" : undefined}
-                  rel={link.external ? "noopener noreferrer" : undefined}
-                  onClick={() => setMenuOpen(false)}
-                  className="px-6 py-3 rounded-full hover:bg-[#C1D6C3] text-lg"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
+
+      {isMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-bg-color border-t border-black/10 shadow-lg">
+          <ul className="flex flex-col gap-6 mt-6 px-4 py-4">
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
+              <a href="#">Work</a>
+            </li>
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
+              <a href="#contacts">Contacts</a>
+            </li>
+            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
+              <a href="Aayush_Chalise.pdf" target="_blank">
+                Resume
+              </a>
+            </li>
           </ul>
         </div>
       )}
     </header>
   );
-}
+};
+
+export default Nav;
