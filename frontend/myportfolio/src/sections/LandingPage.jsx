@@ -1,7 +1,15 @@
+import Marquee from "react-fast-marquee";
+import { RiReactjsFill } from "react-icons/ri";
+import { RiJavascriptFill } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { RiNodejsFill } from "react-icons/ri";
+import { RiNextjsFill } from "react-icons/ri";
+
 const LandingPage = () => {
   return (
-    <main className="min-h-screen bg-bg-color w-full flex justify-center gap-10 xl:pt-20">
-      <div className="xl:w-6xl dots-bg  relative bg-[rgb(242,242,242)] rounded-2xl mt-14 overflow-hidden flex items-center justify-center">
+    <main className="min-h-screen bg-bg-color w-full flex justify-center gap-10 xl:pt-32">
+      <div className="xl:w-6xl dots-bg  relative bg-[rgb(242,242,242)] rounded-2xl overflow-hidden flex items-center justify-center">
         {/* THIS is now the arc container */}
 
         {/* Orange arc */}
@@ -39,7 +47,29 @@ const LandingPage = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-4 p-3 text-theme-green font-dm-sans text-sm mt-7">
+          <div className="  w-80 mt-12   mx-auto  ">
+            <Marquee gradient={false} speed={50}>
+              <span className="mx-8 flex items-center gap-2">
+                <RiReactjsFill size={28} className="text-[#58C4DC]" />
+              </span>
+              <span className="mx-8 flex items-center gap-2">
+                <RiNextjsFill size={28} className="text-[#080808]" />
+              </span>
+              <span className="mx-8 flex items-center gap-2">
+                <RiJavascriptFill size={28} className="text-[#F7E024]" />
+              </span>
+              <span className="mx-8 flex items-center gap-2">
+                <SiExpress size={28} className="text-gray-800" />
+              </span>
+              <span className="mx-8 flex items-center gap-2">
+                <RiTailwindCssFill size={28} className="text-[#37B8F2]" />
+              </span>
+              <span className="mx-8 flex items-center gap-2">
+                <RiNodejsFill size={28} className="text-[#59A149]" />
+              </span>
+            </Marquee>
+          </div>
+          {/* <div className="flex gap-4 p-3 text-theme-green font-dm-sans text-sm mt-7">
             <p className="border border-theme-green rounded-md px-2 py-0.5">
               FRONTEND
             </p>
@@ -49,7 +79,7 @@ const LandingPage = () => {
             <p className="border border-theme-green rounded-md px-2 py-0.5">
               BACKEND
             </p>
-          </div>
+          </div> */}
           <div>
             <button className="border font-montserrat  hover:bg-[#4C6763] border-theme-green  px-6 py-2 rounded-full font-semibold text-sm bg-[#222222] text-white mt-20">
               Explore Projects
