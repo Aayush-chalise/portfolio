@@ -69,3 +69,33 @@
   border-top-color: transparent;
   transform: translate(-38%, 38%);
 }
+
+.inner-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .inner-container {
+    max-width: 48rem; /* 3xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner-container {
+    max-width: 56rem; /* 4xl */
+  }
+}
+
+@media (min-width: 1280px) {
+  .inner-container {
+    max-width: 72rem; /* 6xl */
+  }
+}
+
+.outer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
