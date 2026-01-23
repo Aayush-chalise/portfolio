@@ -10,7 +10,7 @@ import { SiExpress } from "react-icons/si";
 
 const LandingPage = () => {
   return (
-    <main className="min-h-screen bg-bg-color w-full flex justify-center sm:items-center items-start max-sm:pt-16  gap-4 sm:gap-10 xl:pt-32 border-2">
+    <main className="min-h-screen bg-bg-color w-full flex justify-center    max-sm:pt-16  gap-4 sm:gap-10 xl:pt-32 border-2">
       <div className="w-full max-w-full sm:max-w-3xl xl:max-w-6xl lg:max-w-4xl dots-bg relative bg-[rgb(242,242,242)] rounded-2xl overflow-hidden flex max-sm:min-h-screen items-center justify-center mx-2 sm:mx-auto px-3 py-8 sm:py-12">
         <div className="arc arc-orange absolute top-0 right-0 origin-top-right rotate-[180deg]" />
 
@@ -25,7 +25,7 @@ const LandingPage = () => {
             className="font-dm-serif text-theme-green
               text-[2rem] sm:text-[3.5rem] md:text-[clamp(4rem,5vw,7rem)]
               leading-[1.05]
-              tracking-[-0.02em]
+              tracking-[-0.002em]
               font-medium px-2 sm:px-4 w-full "
           >
             <h2 className="text-center">
