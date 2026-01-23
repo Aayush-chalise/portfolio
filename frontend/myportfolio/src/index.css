@@ -18,6 +18,8 @@
 @theme {
   --color-theme-green: #02594e;
   --color-bg-color: #fffbf1;
+  --color-project-bg-color: #121212;
+  --color-project-card-bg-color: #121212;
   --font-dm-serif: "DM Serif Display";
   --font-montserrat: "Montserrat";
   --font-dm-sans: "DM Sans";
