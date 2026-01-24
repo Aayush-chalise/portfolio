@@ -34,7 +34,7 @@ const LandingPage = () => {
               </span>
               <span className="block">A software developer.</span>
             </h2>
-            <div className="font-dm-sans text-base sm:text-[20px] mt-4 flex justify-center items-center">
+            <div className="font-dm-sans text-base sm:text-[22px]  mt-4 flex justify-center items-center">
               <p className="text-center">
                 who loves mixing logic and creativity to craft clean, impactful
                 applications.
@@ -65,7 +65,7 @@ const LandingPage = () => {
           </div>
           <div>
             <button className="border font-montserrat hover:bg-[#4C6763] border-theme-green px-6 py-2 rounded-full font-semibold text-xs sm:text-sm bg-[#222222] text-white mt-14 sm:mt-20">
-              Explore Projects
+              <a href="#projects"> Explore Projects </a>
             </button>
           </div>
         </div>

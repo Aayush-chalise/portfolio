@@ -19,6 +19,7 @@
   --color-theme-green: #02594e;
   --color-bg-color: #fffbf1;
   --color-card-bg: rgb(242, 242, 242);
+  --color-description: #4c6763;
   /* --color-project-bg-color: #121212;
   --color-project-card-bg-color: #121212; */
   --font-dm-serif: "DM Serif Display";
@@ -30,7 +31,7 @@
   background-image:
     linear-gradient(rgba(148, 163, 184, 0.08) 1.5px, transparent 1px),
     linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1.5px, transparent 1px);
-  background-size: 20px 20px;
+  background-size: 40px 40px;
 }
 
 @font-face {
