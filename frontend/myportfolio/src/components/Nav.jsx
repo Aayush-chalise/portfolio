@@ -11,7 +11,7 @@ const Nav = () => {
         <div className="hidden md:flex">
           <ul className="flex gap-6 sm:gap-8">
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="#">Work</a>
+              <a href="#projects">Work</a>
             </li>
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="#contacts">About me</a>
@@ -41,7 +41,7 @@ const Nav = () => {
         <div className="md:hidden absolute top-full left-0 w-full bg-bg-color border-t border-black/10 shadow-lg">
           <ul className="flex flex-col gap-6 mt-6 px-4 py-4">
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="#">Work</a>
+              <a href="#projects">Work</a>
             </li>
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="#contacts">Contacts</a>
