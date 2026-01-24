@@ -1,4 +1,4 @@
-import { healthlabcare, newsmania, nike } from "../assets/images";
+import { healthlabcare, newsmania, nike, todo } from "../assets/images";
 import {
   RiReactjsFill,
   RiJavascriptFill,
@@ -6,8 +6,6 @@ import {
   RiNodejsFill,
   RiNextjsFill,
 } from "react-icons/ri";
-
-import { FaGithub } from "react-icons/fa";
 
 export const projects = [
   {
@@ -69,11 +67,11 @@ export const projects = [
     ],
   },
   {
-    name: "NewsMania",
+    name: "TodoApp",
     description:
-      "A web application that provides the latest news articles from various sources, allowing users to stay informed on current events.",
-    githubLink: "https://github.com/Aayush-chalise/NewsMania",
-    image: newsmania,
+      "This is a full-stack TODO application where users can securely register, log in, and manage their personal task list. The app is fully containerized using Docker, making it easy to set up and deploy. It includes user authentication and real-time task tracking so users can monitor their progress by marking tasks as complete or incomplete. ",
+    githubLink: "https://github.com/Aayush-chalise/chapter_3-todo-app",
+    image: todo,
     tags: [
       {
         Name: "react",
