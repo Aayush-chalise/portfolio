@@ -6,6 +6,7 @@ import {
   RiNodejsFill,
   RiNextjsFill,
 } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
 
 export const projects = [
   {
@@ -24,17 +25,14 @@ export const projects = [
       {
         Name: "express",
         themeColor: "#1e2939",
+        icon: SiExpress,
         id: "56",
       },
       {
         Name: "tailwind",
         themeColor: "#37B8F2",
+        icon: RiTailwindCssFill,
         id: "343",
-      },
-      {
-        Name: "Nodejs",
-        themeColor: "#59A149",
-        id: "5645",
       },
     ],
   },
