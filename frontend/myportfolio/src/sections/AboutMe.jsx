@@ -5,7 +5,7 @@ const AboutMe = () => {
     <section className="outer-container  mt-20">
       <div className="inner-container min-h-screen border flex max-sm:flex-col ">
         <div className="border w-1/2 p-2">
-          <h1 className="  text-[2rem] sm:text-[3.5rem] md:text-[clamp(3rem,4vw,6.5rem)] border font-dm-serif text-theme-green ">
+          <h1 className="  text-[2rem] sm:text-[3.5rem]   md:text-[4rem] border font-dm-serif text-theme-green ">
             Being a developer was a dream I<br></br> had to fight for
           </h1>
           <p className="border mt-10 xl:text-[1.1rem] leading-loose text-description font-medium">
