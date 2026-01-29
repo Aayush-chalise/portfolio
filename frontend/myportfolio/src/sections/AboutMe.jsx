@@ -6,7 +6,10 @@ const AboutMe = () => {
   return (
     <section className="outer-container pt-20" id="aboutme">
       <div className="inner-container  large-grid-bg p-2 ">
-        <div className="w-full flex xl:flex-row flex-col  p-1">
+        <h3 className="font-dm-serif  text-4xl md:text-5xl lg:text-6xl text-theme-green text-center pb-3 ">
+          About
+        </h3>
+        <div className="w-full flex xl:flex-row flex-col mt-4 lg:mt-8  p-1">
           <div className="   w-full xl:w-1/2  p-2 ">
             <h1 className="  text-4xl md:text-5xl lg:text-6xl  font-dm-serif text-theme-green ">
               Being a developer was a dream I had to fight for

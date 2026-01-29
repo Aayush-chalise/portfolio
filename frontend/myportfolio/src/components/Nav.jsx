@@ -13,7 +13,7 @@ const Nav = () => {
           <ul className="flex gap-6 sm:gap-8">
             <li
               className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] ${
-                active === "projects" ? "bg-green-500" : "bg-transparent"
+                active === "projects" ? "bg-[#C1D6C3]" : "bg-transparent"
               } `}
               onClick={() => {
                 setActive("projects");
@@ -26,7 +26,7 @@ const Nav = () => {
                 setActive("aboutme");
               }}
               className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] ${
-                active === "aboutme" ? "bg-green-500" : "bg-transparent"
+                active === "aboutme" ? "bg-[#C1D6C3]" : "bg-transparent"
               }`}
             >
               <a href="#aboutme">About me</a>

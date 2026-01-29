@@ -23,7 +23,7 @@ const LandingPage = () => {
 
           <div
             className="font-dm-serif text-theme-green
-              text-[2rem] sm:text-[3.5rem] md:text-[clamp(4rem,5vw,7rem)]
+              text-[2rem] sm:text-[3.5rem] md:text-[clamp(4rem,6vw,7rem)]
               leading-[1.05]
               tracking-[-0.002em]
               font-medium px-2 sm:px-4 w-full "
@@ -32,7 +32,7 @@ const LandingPage = () => {
               <span className="flex justify-center items-center">
                 Hi. I'm Aayush.
               </span>
-              <span className="block">A software developer.</span>
+              <span className="block">A Software Developer.</span>
             </h2>
             <div className="font-dm-sans text-base sm:text-[22px]  mt-4 flex justify-center items-center">
               <p className="text-center">
@@ -64,7 +64,7 @@ const LandingPage = () => {
             </Marquee>
           </div>
           <div>
-            <button className="border font-montserrat hover:bg-[#4C6763] border-theme-green px-6 py-2 rounded-full font-semibold text-xs sm:text-sm bg-[#222222] text-white mt-14 sm:mt-20">
+            <button className="border font-montserrat hover:bg-[#4C6763] border-theme-green px-6 py-2 rounded-full font-semibold text-xs sm:text-sm bg-[#222222] text-white mt-14 sm:mt-16">
               <a href="#projects"> Explore Projects </a>
             </button>
           </div>
