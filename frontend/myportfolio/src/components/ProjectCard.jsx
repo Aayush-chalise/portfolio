@@ -3,13 +3,13 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className=" flex max-sm:flex-col  bg-card-bg   font-dm-sans mt-6 rounded-2xl w-full  max-w-5xl p-1 md:p-3 ">
+    <div className=" flex flex-col md:flex-row  bg-card-bg   font-dm-sans mt-6 rounded-2xl w-full  max-w-5xl p-1 md:p-3 ">
       <div className="p-3     md:w-[55%]  flex flex-col justify-center    ">
         <div>
           <h4 className="text-3xl  md:text-4xl font-dm-serif  text-theme-green">
             {project.name}
           </h4>
-          <p className=" leading-loose text-base p-1 mt-2 text-description font-medium  xl:text-[1.1rem]">
+          <p className="text-[1.1rem] sm:text-[1.2rem]  md:text-[1.3rem]  p-1 mt-2 text-description font-medium  ">
             {project.description}
           </p>
         </div>

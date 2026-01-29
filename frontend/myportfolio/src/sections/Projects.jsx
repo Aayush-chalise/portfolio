@@ -9,7 +9,7 @@ const Projects = () => {
         <h3 className="font-dm-serif  text-4xl md:text-5xl lg:text-6xl text-theme-green text-center  ">
           Projects
         </h3>
-        <p className="text-center p-1 mt-3 sm:mt-5  lg:mt-7 font-dm-sans   max-w-2xl mx-auto  xl:text-[1.2rem] mb-3 sm:mb-5 lg:mb-7   text-black leading-loose">
+        <p className="text-center p-1 mt-3 sm:mt-5  lg:mt-7 font-dm-sans   max-w-2xl mx-auto   mb-3 sm:mb-5 lg:mb-7   text-black leading-loose text-[1.2rem] sm:text-[1.3rem]  md:text-[1.4rem]">
           Turning my ideas into cool stuff on screens—it's just me, my keyboard,
           and a bunch of pixels. Here’s a sneak peek at some projects!✨
         </p>
