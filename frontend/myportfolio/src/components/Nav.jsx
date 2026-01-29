@@ -3,6 +3,7 @@ import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [active, setActive] = useState("about");
 
   return (
     <header className="w-full z-40 px-3 py-5 sm:py-7 fixed border border-black/10 bg-bg-color font-medium">
@@ -10,10 +11,24 @@ const Nav = () => {
         <div className="text-lg sm:text-xl">aayush</div>
         <div className="hidden md:flex">
           <ul className="flex gap-6 sm:gap-8">
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
+            <li
+              className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] ${
+                active === "projects" ? "bg-green-500" : "bg-transparent"
+              } `}
+              onClick={() => {
+                setActive("projects");
+              }}
+            >
               <a href="#projects">Work</a>
             </li>
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
+            <li
+              onClick={() => {
+                setActive("aboutme");
+              }}
+              className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] ${
+                active === "aboutme" ? "bg-green-500" : "bg-transparent"
+              }`}
+            >
               <a href="#aboutme">About me</a>
             </li>
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">

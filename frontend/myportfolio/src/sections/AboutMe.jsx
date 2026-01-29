@@ -1,23 +1,33 @@
 import React from "react";
+import { mypic } from "../assets/images";
 
 const AboutMe = () => {
+  console.log(mypic);
   return (
-    <section className="outer-container mt-20" id="aboutme">
-      <div className="inner-container min-h-screen  border p-2 ">
-        <div className="w-full flex max-sm:flex-col border-2 p-1">
-          <div className="border max-sm:w-full w-1/2 p-2 ">
-            <h1 className="     md:text-4xl text-3xl font-dm-serif text-theme-green ">
-              Being a developer was a dream <br></br> I had to fight for
+    <section className="outer-container pt-20" id="aboutme">
+      <div className="inner-container  large-grid-bg p-2 ">
+        <div className="w-full flex xl:flex-row flex-col  p-1">
+          <div className="   w-full xl:w-1/2  p-2 ">
+            <h1 className="  text-4xl md:text-5xl lg:text-6xl  font-dm-serif text-theme-green ">
+              Being a developer was a dream I had to fight for
             </h1>
-            <p className="  mt-10     text-description   font-medium">
+            <p className="max-lg:leading-loose  mt-10 text-[1.1rem] sm:text-[1.2rem]  md:text-[1.3rem]    text-description   font-medium">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
               risus. Suspendisse lectus tortor, dignissim nec augue. Nullam eget
-              felis eget nunc mattis vulputate.
+              felis eget nunc mattis vulputate. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Sed non risus. Suspendisse lectus
+              tortor, dignissim nec augue. Nullam eget felis eget nunc mattis
+              vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed non risus. Suspendisse lectus tortor, dignissim nec
+              augue. Nullam eget felis eget nunc mattis vulputate.
             </p>
           </div>
-          <div className="border max-sm:w-full w-1/2 p-2">
-            asdfasd
-            <image src="" />
+          <div className="flex items-center justify-center  w-full xl:w-1/2 p-2">
+            <img
+              src={mypic}
+              alt="mypic"
+              className="rounded-2xl w-full h-auto   "
+            />
           </div>
         </div>
       </div>

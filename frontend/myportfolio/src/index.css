@@ -33,6 +33,12 @@
     linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1.5px, transparent 1px);
   background-size: 40px 40px;
 }
+.large-grid-bg {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.08) 1.5px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1.5px, transparent 1px);
+  background-size: 150px;
+}
 
 @font-face {
   font-family: "sunday";
