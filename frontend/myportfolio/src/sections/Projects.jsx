@@ -4,12 +4,12 @@ import { projects } from "../constants/constant.js";
 
 const Projects = () => {
   return (
-    <section id="projects" className="outer-container mt-24  xl:mt-28">
-      <div className="inner-container flex justify-center items-center flex-col grid-bg gap-4">
+    <section id="projects" className="outer-container mt-24  xl:mt-28 p-1">
+      <div className="inner-container md:flex justify-center items-center flex-col grid-bg gap-4">
         <h3 className="font-dm-serif  text-4xl md:text-5xl lg:text-6xl text-theme-green text-center  ">
           Projects
         </h3>
-        <p className="text-center p-1 mt-3 sm:mt-5  lg:mt-7 font-dm-sans   max-w-2xl mx-auto text- xl:text-[1.2rem] mb-3 sm:mb-5 lg:mb-7   text-black leading-loose">
+        <p className="text-center p-1 mt-3 sm:mt-5  lg:mt-7 font-dm-sans   max-w-2xl mx-auto  xl:text-[1.2rem] mb-3 sm:mb-5 lg:mb-7   text-black leading-loose">
           Turning my ideas into cool stuff on screens—it's just me, my keyboard,
           and a bunch of pixels. Here’s a sneak peek at some projects!✨
         </p>

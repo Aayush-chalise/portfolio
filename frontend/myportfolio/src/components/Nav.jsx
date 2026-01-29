@@ -14,7 +14,7 @@ const Nav = () => {
               <a href="#projects">Work</a>
             </li>
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="#contacts">About me</a>
+              <a href="#aboutme">About me</a>
             </li>
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="Aayush_Chalise.pdf" target="_blank">
@@ -44,7 +44,7 @@ const Nav = () => {
               <a href="#projects">Work</a>
             </li>
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="#contacts">Contacts</a>
+              <a href="#aboutme">About me</a>
             </li>
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="Aayush_Chalise.pdf" target="_blank">
