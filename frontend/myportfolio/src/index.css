@@ -5,17 +5,13 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
-// dm serif display to use
-// montserrat to use
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-@theme {
+@theme static {
   --color-theme-green: #02594e;
   --color-bg-color: #fffbf1;
   --color-card-bg: rgb(242, 242, 242);
