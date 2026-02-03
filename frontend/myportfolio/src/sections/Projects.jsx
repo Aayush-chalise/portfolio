@@ -4,8 +4,8 @@ import { projects } from "../constants/constant.js";
 
 const Projects = () => {
   return (
-    <section id="projects" className="outer-container pt-24  xl:pt-28 p-1">
-      <div className="inner-container md:flex justify-center items-center flex-col grid-bg gap-4">
+    <section id="projects" className="  outer-container pt-24  xl:pt-28 p-1">
+      <div className="inner-container   md:flex justify-center items-center flex-col grid-bg gap-4 md:gap-6">
         <h3 className="font-dm-serif  text-4xl md:text-5xl lg:text-6xl text-theme-green text-center  ">
           Projects
         </h3>

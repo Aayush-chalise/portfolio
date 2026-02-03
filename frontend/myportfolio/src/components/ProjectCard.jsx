@@ -3,9 +3,9 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className=" flex flex-col-reverse md:flex-row  bg-card-bg   font-dm-sans mt-6 rounded-2xl w-full  max-w-5xl p-1 md:p-3 ">
-      <div className="p-3     md:w-[55%]  flex flex-col justify-center    ">
-        <div>
+    <div className="  shadow-xl flex flex-col-reverse    bg-card-bg   font-dm-sans mt-6 rounded-2xl w-full  max-w-3xl ">
+      <div className="p-3   flex flex-col justify-center    ">
+        <div className="mt-2">
           <h4 className="text-3xl  md:text-4xl font-dm-serif  text-theme-green">
             {project.name}
           </h4>
@@ -35,7 +35,7 @@ const ProjectCard = ({ project }) => {
           </a>
         </div>
       </div>
-      <div className="rounded-2xl   md:w-[45%]    overflow-hidden flex items-center  ">
+      <div className="rounded-2xl      overflow-hidden flex items-center  ">
         <img
           src={project.image}
           alt={project.name}
