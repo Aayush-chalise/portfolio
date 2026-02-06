@@ -12,9 +12,7 @@ const Nav = () => {
         <div className="hidden md:flex">
           <ul className="flex gap-6 sm:gap-8">
             <li
-              className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] ${
-                active === "projects" ? "bg-[#C1D6C3]" : "bg-transparent"
-              } `}
+              className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] `}
               onClick={() => {
                 setActive("projects");
               }}
@@ -25,9 +23,7 @@ const Nav = () => {
               onClick={() => {
                 setActive("aboutme");
               }}
-              className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] ${
-                active === "aboutme" ? "bg-[#C1D6C3]" : "bg-transparent"
-              }`}
+              className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3]`}
             >
               <a href="#aboutme">About me</a>
             </li>
