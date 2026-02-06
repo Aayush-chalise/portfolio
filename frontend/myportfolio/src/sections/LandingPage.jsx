@@ -17,7 +17,7 @@ const LandingPage = () => {
         <div className="arc arc-green absolute bottom-0 left-0 origin-bottom-left rotate-[180deg]" />
 
         <div className="px-2 flex flex-col justify-center items-center w-full">
-          <span className="bg-white font-montserrat p-2 rounded-md mb-6 text-theme-green font-semibold text-xs sm:text-sm hidden xl:block ">
+          <span className="bg-white font-montserrat p-2 rounded-md mb-6 text-theme-green font-semibold text-xs sm:text-sm hidden xl:block rotate-3 ">
             Design x Logic x Fun
           </span>
 
