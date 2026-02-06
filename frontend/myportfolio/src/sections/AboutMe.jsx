@@ -2,9 +2,8 @@ import React from "react";
 import { mypic } from "../assets/images";
 
 const AboutMe = () => {
-  console.log(mypic);
   return (
-    <section className="outer-container pt-20" id="aboutme">
+    <section className="outer-container pt-24  xl:pt-28" id="aboutme">
       <div className="inner-container  large-grid-bg p-2 ">
         <h3 className="font-dm-serif  text-4xl md:text-5xl lg:text-6xl text-theme-green text-center pb-3 ">
           About
