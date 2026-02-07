@@ -1,6 +1,6 @@
 import Nav from "./components/Nav";
 import AboutMe from "./sections/AboutMe";
-
+import Footer from "./sections/Footer";
 import Home from "./sections/Home";
 import { Routes, Route } from "react-router-dom";
 
@@ -14,6 +14,7 @@ const App = () => {
 
         <Route path="/about" element={<AboutMe />} />
       </Routes>
+      <Footer />
     </>
   );
 };

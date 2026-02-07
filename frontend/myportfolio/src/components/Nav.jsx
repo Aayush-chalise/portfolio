@@ -18,7 +18,7 @@ const Nav = () => {
                 setActive("projects");
               }}
             >
-              <a href="#projects">Work</a>
+              <Link to="/#projects">Work</Link>
             </li>
             <li
               onClick={() => {
