@@ -12,27 +12,33 @@ const Nav = () => {
         <div className="text-lg sm:text-xl">aayush</div>
         <div className="hidden md:flex">
           <ul className="flex gap-6 sm:gap-8">
-            <li
+            <Link
               className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] `}
               onClick={() => {
                 setActive("projects");
               }}
+              to="/#projects"
             >
-              <Link to="/#projects">Work</Link>
-            </li>
-            <li
+              Work
+            </Link>
+
+            <Link
               onClick={() => {
                 setActive("aboutme");
               }}
               className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3]`}
+              to="/about"
             >
-              <Link to="/about">About me</Link>
-            </li>
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="Aayush_Chalise.pdf" target="_blank">
-                Resume
-              </a>
-            </li>
+              About me
+            </Link>
+
+            <a
+              className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+              href="Aayush_Chalise.pdf"
+              target="_blank"
+            >
+              Resume
+            </a>
           </ul>
         </div>
         <div className="md:hidden">
