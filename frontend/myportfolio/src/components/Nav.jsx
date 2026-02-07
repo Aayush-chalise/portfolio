@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ const Nav = () => {
               }}
               className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3]`}
             >
-              <a href="#aboutme">About me</a>
+              <Link to="/about">About me</Link>
             </li>
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="Aayush_Chalise.pdf" target="_blank">
@@ -55,7 +56,7 @@ const Nav = () => {
               <a href="#projects">Work</a>
             </li>
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="#aboutme">About me</a>
+              <Link to="/about">About me</Link>
             </li>
             <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
               <a href="Aayush_Chalise.pdf" target="_blank">

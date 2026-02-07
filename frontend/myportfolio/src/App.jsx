@@ -4,16 +4,18 @@ import Footer from "./sections/Footer";
 import LandingPage from "./sections/LandingPage";
 import Projects from "./sections/Projects";
 import Home from "./sections/Home";
+import { Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <Nav />
-      <Home />
-      <LandingPage />
-      <Projects />
-      <AboutMe />
-      <Footer />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/about" element={<AboutMe />} />
+      </Routes>
     </>
   );
 };
