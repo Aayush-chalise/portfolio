@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <section className="outer-container min-h-[500px] bg-theme-green text-white text-[17px]">
+    <section className="outer-container min-h-[500px] bg-theme-green text-white text-[17px] border-black mt-24  xl:mt-28 p-2">
       <div className="inner-container">
         <div className="border-b pb-16">
           <p className="font-dm-serif text-3xl font-semibold  leading-normal">
@@ -9,24 +9,25 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex justify-between pt-16  ">
-          <div className="flex gap-12 text-[17px]">
-            <span>Open to receive critique 🤍</span>
+        <div className="font-montserrat flex justify-between pt-16 flex-col xl:flex-row  ">
+          <div className="flex lg:gap-8 flex-col lg:flex-row">
+            <span className="max-xl:pb-4 max-sm:pb-2">
+              Open to receive critique 🤍
+            </span>
             <a
               href="mailto:<chaliseaayush2006@gmail.com> "
-              className="border-b leading-[0.2] "
+              className="sm:mb-1  "
             >
               Email
             </a>
             <a
               href="https://www.linkedin.com/in/aayush-chalise-a94b522bb/"
-              className="border-b"
               target="_blank"
             >
               LinkedIn
             </a>
           </div>
-          <div>
+          <div className="max-xl:pt-4 max-sm:pt-2">
             <span>© Copyright 2026 Aayush Chalise</span>
           </div>
         </div>
