@@ -17,7 +17,16 @@ const Nav = () => {
               onClick={() => {
                 setActive("projects");
               }}
-              to="/#projects"
+              to="/"
+            >
+              Home
+            </Link>
+            <Link
+              className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] `}
+              onClick={() => {
+                setActive("projects");
+              }}
+              to="/projects"
             >
               Work
             </Link>

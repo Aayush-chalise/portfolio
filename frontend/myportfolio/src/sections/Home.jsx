@@ -5,7 +5,6 @@ const Home = () => {
     <div>
       {" "}
       <LandingPage />
-      <Projects />
     </div>
   );
 };
