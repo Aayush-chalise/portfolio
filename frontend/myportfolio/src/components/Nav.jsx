@@ -10,7 +10,7 @@ const Nav = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  ? " border text-theme-green font-bold px-2 py-1 rounded-2xl hover:bg-[#C1D6C3]"
                   : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
               }
               to="/"
@@ -20,7 +20,7 @@ const Nav = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  ? "border text-theme-green font-bold px-2 py-1 rounded-2xl hover:bg-[#C1D6C3]"
                   : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
               }
               to="/projects"
@@ -31,7 +31,7 @@ const Nav = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  ? "border text-theme-green font-bold px-2 py-1 rounded-2xl hover:bg-[#C1D6C3]"
                   : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
               }
               to="/about"
@@ -54,7 +54,7 @@ const Nav = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  ? "border  text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
                   : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
               }
               to="/"
@@ -64,7 +64,7 @@ const Nav = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  ? "border text-theme-green font-bold px-2 py-1 rounded-2xl hover:bg-[#C1D6C3]"
                   : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
               }
               to="/projects"
@@ -75,7 +75,7 @@ const Nav = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  ? "border  text-theme-green font-bold px-2 py-1 rounded-2xl hover:bg-[#C1D6C3]   "
                   : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
               }
               to="/about"
