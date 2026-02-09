@@ -1,45 +1,43 @@
-import React, { useState } from "react";
-import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [active, setActive] = useState("about");
-
   return (
-    <header className="w-full z-40 px-3 py-5 sm:py-7 fixed border border-black/10 bg-bg-color font-medium">
-      <nav className="flex flex-wrap justify-between items-center max-w-full sm:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto font-dm-sans">
-        <div className="text-lg sm:text-xl">aayush</div>
+    <header className="w-full z-40 px-3 py-5 sm:py-7 fixed md:border md:border-black/10 bg-bg-color font-medium ">
+      <nav className="flex flex-wrap md:justify-between justify-center items-center max-w-full sm:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto font-dm-sans">
+        <div className="text-lg sm:text-xl hidden md:block">aayush</div>
         <div className="hidden md:flex">
           <ul className="flex gap-6 sm:gap-8">
-            <Link
-              className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] `}
-              onClick={() => {
-                setActive("projects");
-              }}
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+              }
               to="/"
             >
               Home
-            </Link>
-            <Link
-              className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3] `}
-              onClick={() => {
-                setActive("projects");
-              }}
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+              }
               to="/projects"
             >
               Work
-            </Link>
+            </NavLink>
 
-            <Link
-              onClick={() => {
-                setActive("aboutme");
-              }}
-              className={`px-2 py-1 rounded-full hover:bg-[#C1D6C3]`}
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+              }
               to="/about"
             >
               About me
-            </Link>
+            </NavLink>
 
             <a
               className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
@@ -50,37 +48,51 @@ const Nav = () => {
             </a>
           </ul>
         </div>
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          >
-            {isMenuOpen ? (
-              <IoCloseOutline size={24} />
-            ) : (
-              <IoMenuOutline size={24} />
-            )}
-          </button>
-        </div>
-      </nav>
 
-      {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-bg-color border-t border-black/10 shadow-lg">
-          <ul className="flex flex-col gap-6 mt-6 px-4 py-4">
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="#projects">Work</a>
-            </li>
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <Link to="/about">About me</Link>
-            </li>
-            <li className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]">
-              <a href="Aayush_Chalise.pdf" target="_blank">
-                Resume
-              </a>
-            </li>
+        <div className="flex justify-center items-center max-w-[370px] px-1.5 sm:px-3 md:py-3  sm:max-w-[450px] md:hidden   rounded-2xl py-1.5 bg-card-bg ">
+          <ul className="flex gap-6 sm:gap-8">
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+              }
+              to="/projects"
+            >
+              Work
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+              }
+              to="/about"
+            >
+              About me
+            </NavLink>
+
+            <a
+              className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+              href="Aayush_Chalise.pdf"
+              target="_blank"
+            >
+              Resume
+            </a>
           </ul>
         </div>
-      )}
+      </nav>
     </header>
   );
 };
