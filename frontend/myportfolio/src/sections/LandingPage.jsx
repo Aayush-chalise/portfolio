@@ -18,7 +18,7 @@ const LandingPage = () => {
         <div className="arc arc-green absolute bottom-0 left-0 origin-bottom-left rotate-[180deg]" />
 
         <div className="px-2 flex flex-col justify-center items-center w-full">
-          <span className="bg-white font-montserrat p-2 rounded-md mb-6 text-theme-green font-semibold text-xs sm:text-sm hidden xl:block rotate-3 ">
+          <span className="bg-white font-montserrat p-2 rounded-md mb-6 text-theme-green font-semibold text-xs sm:text-sm  xl:block rotate-3 ">
             Design x Logic x Fun
           </span>
 
@@ -65,7 +65,7 @@ const LandingPage = () => {
             </Marquee>
           </div>
           <div>
-            <button className="border font-montserrat hover:bg-[#4C6763] border-theme-green px-6 py-2 rounded-full font-semibold text-xs sm:text-sm bg-[#222222] text-white mt-14 sm:mt-16">
+            <button className="border font-montserrat hover:bg-[#4C6763] border-theme-green px-6 py-2 rounded-full font-semibold text-xs sm:text-sm bg-[#222222] text-white mt-14 sm:mt-16 ">
               <Link to="/projects"> Explore Projects </Link>
             </button>
           </div>

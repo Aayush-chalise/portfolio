@@ -7,40 +7,67 @@ const Nav = () => {
         <div className="text-lg sm:text-xl hidden md:block">aayush</div>
         <div className="hidden md:flex">
           <ul className="flex gap-6 sm:gap-8">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? " border text-theme-green font-bold px-2 py-1 rounded-2xl hover:bg-[#C1D6C3]"
-                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
-              }
-              to="/"
-            >
-              Home
+            <NavLink className="relative" to="/">
+              {({ isActive }) => (
+                <div className="relative px-2 py-1">
+                  <span
+                    className={
+                      isActive ? "text-theme-green font-bold" : "text-gray-700"
+                    }
+                  >
+                    Home
+                  </span>
+
+                  <span
+                    className={`absolute left-0 bottom-0 h-[2px] bg-theme-green transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0"
+                    }`}
+                  />
+                </div>
+              )}
             </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "border text-theme-green font-bold px-2 py-1 rounded-2xl hover:bg-[#C1D6C3]"
-                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
-              }
-              to="/projects"
-            >
-              Work
+            <NavLink className="relative" to="/projects">
+              {({ isActive }) => (
+                <div className="relative px-2 py-1">
+                  <span
+                    className={
+                      isActive ? "text-theme-green font-bold" : "text-gray-700"
+                    }
+                  >
+                    Work
+                  </span>
+
+                  <span
+                    className={`absolute left-0 bottom-0 h-[2px] bg-theme-green transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0"
+                    }`}
+                  />
+                </div>
+              )}
             </NavLink>
 
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "border text-theme-green font-bold px-2 py-1 rounded-2xl hover:bg-[#C1D6C3]"
-                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
-              }
-              to="/about"
-            >
-              About me
+            <NavLink className="relative" to="/about">
+              {({ isActive }) => (
+                <div className="relative px-2 py-1">
+                  <span
+                    className={
+                      isActive ? "text-theme-green font-bold" : "text-gray-700"
+                    }
+                  >
+                    About
+                  </span>
+
+                  <span
+                    className={`absolute left-0 bottom-0 h-[2px] bg-theme-green transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0"
+                    }`}
+                  />
+                </div>
+              )}
             </NavLink>
 
             <a
-              className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+              className="px-2 py-1 text-gray-700 "
               href="Aayush_Chalise.pdf"
               target="_blank"
             >
@@ -49,42 +76,69 @@ const Nav = () => {
           </ul>
         </div>
 
-        <div className="flex justify-center items-center max-w-[370px] px-1.5 sm:px-3 md:py-3  sm:max-w-[450px] md:hidden   rounded-2xl py-1.5 bg-card-bg ">
+        <div className="flex justify-center items-center max-w-[370px] px-3 sm:px-5 md:py-4  sm:max-w-[450px] md:hidden   rounded-2xl py-2.5 bg-card-bg ">
           <ul className="flex gap-6 sm:gap-8">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "border  text-theme-green font-bold px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
-                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
-              }
-              to="/"
-            >
-              Home
+            <NavLink className="relative" to="/">
+              {({ isActive }) => (
+                <div className="relative px-2 py-1">
+                  <span
+                    className={
+                      isActive ? "text-theme-green font-bold" : "text-gray-700"
+                    }
+                  >
+                    Home
+                  </span>
+
+                  <span
+                    className={`absolute left-0 bottom-0 h-[2px] bg-theme-green transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0"
+                    }`}
+                  />
+                </div>
+              )}
             </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "border text-theme-green font-bold px-2 py-1 rounded-2xl hover:bg-[#C1D6C3]"
-                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
-              }
-              to="/projects"
-            >
-              Work
+            <NavLink className="relative" to="/projects">
+              {({ isActive }) => (
+                <div className="relative px-2 py-1">
+                  <span
+                    className={
+                      isActive ? "text-theme-green font-bold" : "text-gray-700"
+                    }
+                  >
+                    Work
+                  </span>
+
+                  <span
+                    className={`absolute left-0 bottom-0 h-[2px] bg-theme-green transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0"
+                    }`}
+                  />
+                </div>
+              )}
             </NavLink>
 
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "border  text-theme-green font-bold px-2 py-1 rounded-2xl hover:bg-[#C1D6C3]   "
-                  : "px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
-              }
-              to="/about"
-            >
-              About me
+            <NavLink className="relative" to="/about">
+              {({ isActive }) => (
+                <div className="relative px-2 py-1">
+                  <span
+                    className={
+                      isActive ? "text-theme-green font-bold" : "text-gray-700"
+                    }
+                  >
+                    About
+                  </span>
+
+                  <span
+                    className={`absolute left-0 bottom-0 h-[2px] bg-theme-green transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0"
+                    }`}
+                  />
+                </div>
+              )}
             </NavLink>
 
             <a
-              className="px-2 py-1 rounded-full hover:bg-[#C1D6C3]"
+              className="px-2 py-1 text-gray-700 "
               href="Aayush_Chalise.pdf"
               target="_blank"
             >
