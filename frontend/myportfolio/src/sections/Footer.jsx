@@ -3,7 +3,7 @@ const Footer = () => {
     <section className="outer-container min-h-[500px] bg-theme-green text-white text-[17px] border-black mt-24  xl:mt-28 p-2">
       <div className="inner-container">
         <div className="border-b pb-16">
-          <p className="font-dm-serif text-3xl font-semibold  leading-normal">
+          <p className="font-dm-serif text-[21px] sm:text-2xl lg:text-3xl font-semibold  leading-normal">
             From collaborating on a cool project to discussing the next big
             thing happening, feel free to drop me a line.
           </p>
