@@ -10,33 +10,40 @@ const AboutMe = () => {
         </h3> */}
         <div className="w-full flex xl:flex-row flex-col mt-4 lg:mt-8  p-1">
           <div className="   w-full xl:w-1/2  p-2 ">
-            <h1 className="font-bold  text-4xl md:text-5xl lg:text-6xl  font-dm-serif text-theme-green ">
+            <h1 className="  text-4xl md:text-5xl lg:text-6xl  font-dm-serif text-theme-green ">
               Know me better
             </h1>
-            <p className="max-lg:leading-loose  mt-15 font-medium   text-description  text-[17px]  ">
+            <p className="   max-xl:leading-loose  mt-8  xl:mt-15 font-medium     text-description text-[18px]  xl:text-[17px]  ">
               <span>Hey, I am Aayush </span>
-              <br></br>
-              <br></br>
-              an independent product designer and framer developer from India. I
-              work with founders and early-stage teams to shape clean,
-              functional visual & web experiences.
-              <br></br>
-              <br></br>I survive on Redbull and all-nighters, running purely on
-              caffeine and stubbornness. I hate coding, but I’ll happily spend
-              hours tweaking spacing until it feels “just right.”
-              <br></br>
-              <br></br>
-              I’ve got a habit of finding calm in staring at clouds and sky
-              textures. Half of my camera roll is just blue gradients and soft
-              sunlight.
-              <br></br>
-              <br></br>I like building stuff that feels simple, smooth, and
-              kinda satisfying to use.
-              <br></br>
-              <br></br>{" "}
-              <strong>If you want to build something together, I’m in.</strong>
+
+              <p className="pt-4 md:pt-5 xl:pt-7   ">
+                an independent product designer and framer developer from India.
+                I work with founders and early-stage teams to shape clean,
+                functional visual & web experiences.
+              </p>
+
+              <p className="pt-4 md:pt-5 xl:pt-7  ">
+                I survive on Redbull and all-nighters, running purely on
+                caffeine and stubbornness. I hate coding, but I’ll happily spend
+                hours tweaking spacing until it feels “just right.”
+              </p>
+
+              <p className="pt-4  md:pt-5 xl:pt-7  ">
+                {" "}
+                I’ve got a habit of finding calm in staring at clouds and sky
+                textures. Half of my camera roll is just blue gradients and soft
+                sunlight.{" "}
+              </p>
+              <p className="pt-4 md:pt-5 xl:pt-7  ">
+                I like building stuff that feels simple, smooth, and kinda
+                satisfying to use.
+              </p>
+
+              <p className="pt-4 md:pt-5  xl:pt-7   font-bold ">
+                If you want to build something together, I’m in.
+              </p>
             </p>
-            <div className="pt-3 md:pt-8  ">
+            {/* <div className="pt-3 md:pt-8  ">
               <span className="text font-semibold font-montserrat text-theme-green">
                 Song On-Repeat:
               </span>
@@ -52,14 +59,33 @@ const AboutMe = () => {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
-            </div>
+            </div> */}
           </div>
-          <div className="flex items-center justify-center mt-4  w-full xl:w-1/2 p-2">
-            <img
-              src={mypic}
-              alt="mypic"
-              className="rounded-2xl w-full h-auto   "
-            />
+          <div className="flex flex-col items-center justify-center mt-4         w-full xl:w-1/2 p-2">
+            <div className=" ">
+              <img
+                src={mypic}
+                alt="mypic"
+                className="rounded-xl  w-full   h-auto object-cover  "
+              />
+            </div>
+            <div className="pt-4 sm:pt-8 md:pt-12   max-sm:w-full xl:w-full ">
+              <span className="text font-semibold font-montserrat text-theme-green">
+                Song On-Repeat:
+              </span>
+              <iframe
+                className="max-w-full max-h-45   sm:w-130 md:max-h-50 pt-2 md:pt-5 xl:max-w-full  "
+                data-testid="embed-iframe"
+                style={{ borderRadius: "12px" }}
+                src="https://open.spotify.com/embed/track/4Z1ZlABSKDlVByJL3y5OVs?utm_source=generator"
+                width="100%"
+                height="352"
+                frameBorder={0}
+                allowFullScreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
