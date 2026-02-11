@@ -17,9 +17,9 @@ const AboutMe = () => {
               <span>Hey, I am Aayush </span>
 
               <p className="pt-4 md:pt-5 xl:pt-7   ">
-                an independent product designer and framer developer from India.
-                I work with founders and early-stage teams to shape clean,
-                functional visual & web experiences.
+                a web developer and ai enthusiast. I work with founders and
+                early-stage teams to shape clean, functional visual & web
+                experiences.
               </p>
 
               <p className="pt-4 md:pt-5 xl:pt-7  ">
@@ -30,9 +30,7 @@ const AboutMe = () => {
 
               <p className="pt-4  md:pt-5 xl:pt-7  ">
                 {" "}
-                I’ve got a habit of finding calm in staring at clouds and sky
-                textures. Half of my camera roll is just blue gradients and soft
-                sunlight.{" "}
+                I like to learn about geography and world history
               </p>
               <p className="pt-4 md:pt-5 xl:pt-7  ">
                 I like building stuff that feels simple, smooth, and kinda
