@@ -13,7 +13,7 @@ const AboutMe = () => {
             <h1 className="  text-4xl md:text-5xl lg:text-6xl  font-dm-serif text-theme-green ">
               Know me better
             </h1>
-            <p className="max-xl:leading-loose    mt-8  xl:mt-15 font-medium     text-description text-[18px]  xl:text-[17px]">
+            <div className="max-xl:leading-loose  mt-8  xl:mt-15 font-medium     text-description text-[18px]  xl:text-[19px]">
               <span>Hey, I am Aayush </span>
 
               <p className="pt-4 md:pt-5 xl:pt-7   ">
@@ -41,7 +41,7 @@ const AboutMe = () => {
               <p className="pt-4 md:pt-5  xl:pt-7   font-bold ">
                 If you want to build something together, I’m in.
               </p>
-            </p>
+            </div>
             {/* <div className="pt-3 md:pt-8  ">
               <span className="text font-semibold font-montserrat text-theme-green">
                 Song On-Repeat:
@@ -60,7 +60,7 @@ const AboutMe = () => {
               ></iframe>
             </div> */}
           </div>
-          <div className="flex flex-col items-center justify-center mt-4         w-full xl:w-1/2 p-2">
+          <div className="flex flex-col  justify-center mt-4         w-full xl:w-1/2 p-2">
             <div className=" ">
               <img
                 src={mypic}
@@ -68,7 +68,7 @@ const AboutMe = () => {
                 className="rounded-xl  w-full   h-auto object-cover  "
               />
             </div>
-            <div className="pt-4 sm:pt-8 md:pt-12   max-sm:w-full xl:w-full ">
+            <div className="pt-4 sm:pt-8 md:pt-12  max-sm:w-full xl:w-full ">
               <span className="text font-semibold font-montserrat text-theme-green">
                 Song On-Repeat:
               </span>
