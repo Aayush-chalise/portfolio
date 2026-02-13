@@ -1,10 +1,15 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../constants/constant.js";
+import { motion } from "motion/react";
 
 const Projects = () => {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, x: 40 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -40 }}
+      transition={{ duration: 0.3 }}
       id="projects"
       className="  outer-container pt-24 sm:pt-26  xl:pt-28 p-2"
     >
@@ -20,7 +25,7 @@ const Projects = () => {
           <ProjectCard key={index} project={project} />
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
