@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
-    <main className="min-h-screen outer-container max-sm:pt-13 pt-14 gap-4 sm:gap-10 xl:pt-20 ">
-      <div className="inner-container dots-bg relative bg-[rgb(242,242,242)] rounded-2xl overflow-hidden flex max-sm:min-h-screen items-center justify-center mx-2 sm:mx-auto px-3 py-8 sm:py-12">
+    <main className="min-h-dvh outer-container max-sm:pt-13 pt-14 gap-4 sm:gap-10 xl:pt-20 ">
+      <div className="inner-container dots-bg relative bg-[rgb(242,242,242)] rounded-2xl overflow-hidden flex max-sm:min-h-dvh items-center justify-center mx-2 sm:mx-auto px-3 py-8 sm:py-12">
         <div className="arc arc-orange absolute top-0 right-0 origin-top-right rotate-[180deg]" />
 
         <div className="arc arc-green absolute bottom-0 left-0 origin-bottom-left rotate-[180deg]" />
@@ -65,9 +65,12 @@ const LandingPage = () => {
             </Marquee>
           </div>
           <div>
-            <button className="border font-montserrat hover:bg-[#4C6763] border-theme-green px-6 py-2 rounded-full font-semibold text-xs sm:text-sm bg-[#222222] text-white mt-14 sm:mt-16 ">
-              <Link to="/projects"> Explore Projects </Link>
-            </button>
+            <Link
+              to="/projects"
+              className="   border font-montserrat hover:bg-[#4C6763] border-theme-green px-6 py-2 rounded-full font-semibold text-xs sm:text-sm bg-[#222222] text-white mt-14 sm:mt-16 inline-block "
+            >
+              Explore Projects
+            </Link>
           </div>
         </div>
       </div>

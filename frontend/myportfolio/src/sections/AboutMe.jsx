@@ -6,14 +6,14 @@ const AboutMe = () => {
     <section className="outer-container pt-24  xl:pt-28" id="aboutme">
       <div className="inner-container  large-grid-bg p-2 ">
         {/* <h3 className="font-dm-serif  text-4xl md:text-5xl lg:text-6xl text-theme-green text-center pb-3 ">
-          About
+          Know me better
         </h3> */}
         <div className="w-full flex xl:flex-row flex-col mt-4 lg:mt-8  p-1">
           <div className="   w-full xl:w-1/2  p-2 ">
             <h1 className="  text-4xl md:text-5xl lg:text-6xl  font-dm-serif text-theme-green ">
               Know me better
             </h1>
-            <div className="max-xl:leading-loose  mt-8  xl:mt-15 font-medium     text-description text-[18px]  xl:text-[19px]">
+            <div className=" mt-8  xl:mt-15 font-medium font-dm-sans text-description text-[1.1rem] sm:text-[1.2rem]  md:text-[1.3rem] ">
               <span>Hey, I am Aayush </span>
 
               <p className="pt-4 md:pt-5 xl:pt-7   ">
