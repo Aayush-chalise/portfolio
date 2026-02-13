@@ -4,15 +4,14 @@ import { motion } from "motion/react";
 
 const AboutMe = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0, x: 40 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -40 }}
-      transition={{ duration: 0.4 }}
-      className="outer-container pt-24  xl:pt-28"
-      id="aboutme"
-    >
-      <div className="inner-container  large-grid-bg p-2 ">
+    <section className="outer-container pt-24  xl:pt-28" id="aboutme">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -40 }}
+        transition={{ duration: 0.4 }}
+        className="inner-container  large-grid-bg p-2 "
+      >
         {/* <h3 className="font-dm-serif  text-4xl md:text-5xl lg:text-6xl text-theme-green text-center pb-3 ">
           Know me better
         </h3> */}
@@ -35,11 +34,10 @@ const AboutMe = () => {
                 caffeine and stubbornness. I hate coding, but I’ll happily spend
                 hours tweaking spacing until it feels “just right.”
               </p>
-              <p>
-                <p className="pt-4 md:pt-5 xl:pt-7  ">
-                  <span className="font-bold border-l-4 pl-2">Fun fact: </span>{" "}
-                  I can name every country flag in the world.
-                </p>
+
+              <p className="pt-4 md:pt-5 xl:pt-7  ">
+                <span className="font-bold border-l-4 pl-2">Fun fact: </span> I
+                can name every country flag in the world.
               </p>
 
               <p className="pt-4  md:pt-5 xl:pt-7  ">
@@ -101,8 +99,8 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 };
 

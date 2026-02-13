@@ -12,17 +12,17 @@ import { motion } from "motion/react";
 
 const LandingPage = () => {
   return (
-    <motion.main
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -40 }}
-      transition={{ duration: 0.4 }}
-      className="min-h-dvh outer-container max-sm:pt-13 pt-14 gap-4 sm:gap-10 xl:pt-20 "
-    >
-      <div className="inner-container dots-bg relative bg-[rgb(242,242,242)] rounded-2xl overflow-hidden flex max-sm:min-h-dvh items-center justify-center mx-2 sm:mx-auto px-3 py-8 sm:py-12">
-        <div className="arc arc-orange absolute top-0 right-0 origin-top-right rotate-[180deg]" />
+    <main className="min-h-dvh outer-container max-sm:pt-13 pt-14 gap-4 sm:gap-10 xl:pt-20 ">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -40 }}
+        transition={{ duration: 0.4 }}
+        className="inner-container dots-bg relative bg-card-bg rounded-2xl overflow-hidden flex max-sm:min-h-dvh items-center justify-center mx-2 sm:mx-auto px-3 py-8 sm:py-12"
+      >
+        <div className="arc arc-orange absolute top-0 right-0 origin-top-right rotate-180" />
 
-        <div className="arc arc-green absolute bottom-0 left-0 origin-bottom-left rotate-[180deg]" />
+        <div className="arc arc-green absolute bottom-0 left-0 origin-bottom-left rotate-180" />
 
         <div className="px-2 flex flex-col justify-center items-center w-full">
           <span className="bg-white font-montserrat p-2 rounded-md mb-6 text-theme-green font-semibold text-xs sm:text-sm  xl:block rotate-3 ">
@@ -49,7 +49,7 @@ const LandingPage = () => {
               </p>
             </div>
           </div>
-          <div className="w-48 sm:w-80 md:w-[380px] mt-8 sm:mt-12 mx-auto">
+          <div className="w-48 sm:w-80 md:w-95 mt-8 sm:mt-12 mx-auto">
             <Marquee gradient={false} speed={50}>
               <span className="mx-8 flex items-center gap-2">
                 <RiReactjsFill size={24} className="text-[#58C4DC]" />
@@ -80,8 +80,8 @@ const LandingPage = () => {
             </Link>
           </div>
         </div>
-      </div>
-    </motion.main>
+      </motion.div>
+    </main>
   );
 };
 

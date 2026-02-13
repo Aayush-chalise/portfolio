@@ -5,15 +5,17 @@ import { motion } from "motion/react";
 
 const Projects = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0, x: 40 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -40 }}
-      transition={{ duration: 0.4 }}
+    <section
       id="projects"
       className="  outer-container pt-24 sm:pt-26  xl:pt-28 p-2"
     >
-      <div className="inner-container   md:flex justify-center items-center flex-col grid-bg gap-4 md:gap-6">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -40 }}
+        transition={{ duration: 0.4 }}
+        className="inner-container   md:flex justify-center items-center flex-col grid-bg gap-4 md:gap-6"
+      >
         <h3 className="font-dm-serif  text-4xl md:text-5xl lg:text-6xl text-theme-green text-center  ">
           Projects
         </h3>
@@ -24,8 +26,8 @@ const Projects = () => {
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 };
 
