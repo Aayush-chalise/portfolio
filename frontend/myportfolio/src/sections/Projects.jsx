@@ -9,7 +9,7 @@ const Projects = () => {
       initial={{ opacity: 0, x: 40 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -40 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.4 }}
       id="projects"
       className="  outer-container pt-24 sm:pt-26  xl:pt-28 p-2"
     >

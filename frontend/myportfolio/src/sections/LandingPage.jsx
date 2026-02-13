@@ -16,7 +16,7 @@ const LandingPage = () => {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -40 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.4 }}
       className="min-h-dvh outer-container max-sm:pt-13 pt-14 gap-4 sm:gap-10 xl:pt-20 "
     >
       <div className="inner-container dots-bg relative bg-[rgb(242,242,242)] rounded-2xl overflow-hidden flex max-sm:min-h-dvh items-center justify-center mx-2 sm:mx-auto px-3 py-8 sm:py-12">
