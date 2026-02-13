@@ -13,7 +13,7 @@ const AboutMe = () => {
             <h1 className="  text-4xl md:text-5xl lg:text-6xl  font-dm-serif text-theme-green ">
               Know me better
             </h1>
-            <p className="   max-xl:leading-loose  mt-8  xl:mt-15 font-medium     text-description text-[18px]  xl:text-[17px]  ">
+            <p className="max-xl:leading-loose    mt-8  xl:mt-15 font-medium     text-description text-[18px]  xl:text-[17px]">
               <span>Hey, I am Aayush </span>
 
               <p className="pt-4 md:pt-5 xl:pt-7   ">
@@ -30,7 +30,8 @@ const AboutMe = () => {
 
               <p className="pt-4  md:pt-5 xl:pt-7  ">
                 {" "}
-                I like to learn about geography and world history
+                I like to learn about geography and world history on my free
+                time.
               </p>
               <p className="pt-4 md:pt-5 xl:pt-7  ">
                 I like building stuff that feels simple, smooth, and kinda

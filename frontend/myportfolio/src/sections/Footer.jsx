@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <section className="outer-container min-h-[500px] bg-theme-green text-white text-[17px] border-black mt-24  xl:mt-28 p-2">
+    <section className="outer-container min-h-125 bg-theme-green text-white  border-black mt-24  xl:mt-28 p-2">
       <div className="inner-container">
         <div className="border-b pb-16">
           <p className="font-dm-serif text-[21px] sm:text-2xl lg:text-3xl font-semibold  leading-normal">
@@ -9,7 +9,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="font-montserrat flex justify-between pt-16 flex-col xl:flex-row  ">
+        <div className="font-montserrat flex justify-between pt-16 flex-col xl:flex-row text-[16px] md:text-[17px] ">
           <div className="flex lg:gap-8 flex-col lg:flex-row">
             <span className="max-xl:pb-4 max-sm:pb-2">
               Open to receive critique 🤍
