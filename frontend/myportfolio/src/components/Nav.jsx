@@ -68,7 +68,7 @@ const Nav = React.memo(() => {
             </NavLink>
 
             <a
-              className="px-2 py-1 text-gray-700 "
+              className="px-5 py-1  text-white hover:underline bg-theme-green rounded-full"
               href="Aayush_Chalise.pdf"
               target="_blank"
             >
@@ -139,7 +139,7 @@ const Nav = React.memo(() => {
             </NavLink>
 
             <a
-              className="px-2 py-1 text-gray-700 "
+              className="px-4 py-1 text-white bg-theme-green  rounded-full"
               href="Aayush_Chalise.pdf"
               target="_blank"
             >
