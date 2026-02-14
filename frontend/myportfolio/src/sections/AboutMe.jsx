@@ -35,10 +35,12 @@ const AboutMe = () => {
                 hours tweaking spacing until it feels “just right.”
               </p>
 
-              <p className="pt-4 md:pt-5 xl:pt-7  ">
-                <span className="font-bold border-l-4 pl-2">Fun fact: </span> I
-                can name every country flag in the world.
-              </p>
+              <div className="pt-4 md:pt-5 xl:pt-7 ">
+                <p className="border-l-4 pl-2 ">
+                  <span className="font-bold ">Fun fact: </span> I can name
+                  every country flag in the world.
+                </p>
+              </div>
 
               <p className="pt-4  md:pt-5 xl:pt-7  ">
                 {" "}
