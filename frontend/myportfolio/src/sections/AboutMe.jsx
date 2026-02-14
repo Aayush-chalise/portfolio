@@ -23,18 +23,24 @@ const AboutMe = () => {
             <div className=" mt-8  xl:mt-15 font-medium font-dm-sans text-description text-[1.1rem] sm:text-[1.2rem]  md:text-[1.3rem] ">
               <span>Hey, I am Aayush </span>
 
-              <p className="pt-4 md:pt-5 xl:pt-7   ">
-                a Web developer and AI enthusiast. I work with frontend and
-                backend technologies to shape clean, functional & web
-                experiences.
+              <p className="pt-4 md:pt-5 xl:pt-7">
+                a full-stack developer with hands-on experience building web
+                applications from the ground up. I love creating dynamic,
+                responsive, and user-friendly interfaces while ensuring robust
+                backend functionality.
               </p>
 
               <p className="pt-4 md:pt-5 xl:pt-7  ">
-                I survive on Redbull and all-nighters, running purely on
-                caffeine and stubbornness. I hate designing, but I’ll happily
-                spend hours coding to turn the design to a functional site.
+                When I’m not coding, you might find me experimenting with quirky
+                projects or chasing the perfect coffee. I like to keep the fun
+                in functional!
               </p>
 
+              <p className="pt-4  md:pt-5 xl:pt-7  ">
+                {" "}
+                I love exploring the world through maps, stories, and history
+                whenever I get some free time.
+              </p>
               <div className="pt-4 md:pt-5 xl:pt-7 ">
                 <p className="border-l-4 pl-2 ">
                   <span className="font-bold ">Fun fact: </span> I can name
@@ -42,26 +48,16 @@ const AboutMe = () => {
                 </p>
               </div>
 
-              <p className="pt-4  md:pt-5 xl:pt-7  ">
-                {" "}
-                I like to learn about geography and world history on my free
-                time.
-              </p>
-              <p className="pt-4 md:pt-5 xl:pt-7  ">
-                I like building stuff that feels simple, smooth, and kinda
-                satisfying to use.
-              </p>
-
               <p className="pt-4 md:pt-5  xl:pt-7   font-bold ">
                 If you want to build something together, I’m in.
               </p>
             </div>
-            {/* <div className="pt-3 md:pt-8  ">
+            <div className="pt-4 sm:pt-8 md:pt-12 hidden md:block max-sm:w-full xl:w-full ">
               <span className="text font-semibold font-montserrat text-theme-green">
                 Song On-Repeat:
               </span>
               <iframe
-                className="max-w-full max-h-45 md:max-w-100 md:max-h-50 pt-2 md:pt-5"
+                className="max-w-full max-h-45  sm:w-130 md:max-h-50 pt-2 md:pt-5 xl:max-w-full  "
                 data-testid="embed-iframe"
                 style={{ borderRadius: "12px" }}
                 src="https://open.spotify.com/embed/track/4Z1ZlABSKDlVByJL3y5OVs?utm_source=generator"
@@ -72,7 +68,7 @@ const AboutMe = () => {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
-            </div> */}
+            </div>
           </div>
           <div className="flex flex-col  justify-center mt-4         w-full xl:w-1/2 p-2">
             <div className=" ">
@@ -82,7 +78,7 @@ const AboutMe = () => {
                 className="rounded-xl  w-full   h-auto object-cover  "
               />
             </div>
-            <div className="pt-4 sm:pt-8 md:pt-12  max-sm:w-full xl:w-full ">
+            <div className="pt-4 sm:pt-8 md:pt-12  max-sm:w-full xl:w-full md:hidden ">
               <span className="text font-semibold font-montserrat text-theme-green">
                 Song On-Repeat:
               </span>
