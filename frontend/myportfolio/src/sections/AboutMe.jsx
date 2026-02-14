@@ -24,15 +24,15 @@ const AboutMe = () => {
               <span>Hey, I am Aayush </span>
 
               <p className="pt-4 md:pt-5 xl:pt-7   ">
-                a Web developer and AI enthusiast. I work with founders and
-                early-stage teams to shape clean, functional visual & web
+                a Web developer and AI enthusiast. I work with frontend and
+                backend technologies to shape clean, functional & web
                 experiences.
               </p>
 
               <p className="pt-4 md:pt-5 xl:pt-7  ">
                 I survive on Redbull and all-nighters, running purely on
-                caffeine and stubbornness. I hate coding, but I’ll happily spend
-                hours tweaking spacing until it feels “just right.”
+                caffeine and stubbornness. I hate designing, but I’ll happily
+                spend hours coding to turn the design to a functional site.
               </p>
 
               <div className="pt-4 md:pt-5 xl:pt-7 ">
