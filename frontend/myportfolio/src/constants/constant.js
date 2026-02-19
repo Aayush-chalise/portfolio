@@ -55,6 +55,7 @@ export const projects = [
     description:
       "A responsive clone of the Nike website built with React and Tailwind CSS, featuring a modern design and interactive elements.",
     githubLink: "https://github.com/Aayush-chalise/nikeweb",
+    liveLink: "https://statnikeweb.netlify.app/",
     image: nike,
     tags: [
       {
@@ -69,6 +70,7 @@ export const projects = [
     description:
       "This is a full-stack TODO application where users can securely register, log in, and manage their personal task list. The app is fully containerized using Docker, making it easy to set up and deploy. It includes user authentication and real-time task tracking so users can monitor their progress by marking tasks as complete or incomplete. ",
     githubLink: "https://github.com/Aayush-chalise/chapter_3-todo-app",
+    liveLink: "https://chapter-3-todo-app.onrender.com/",
     image: todo,
     tags: [
       {
