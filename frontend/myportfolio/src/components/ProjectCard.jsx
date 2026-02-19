@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { GoArrowRight } from "react-icons/go";
-
+import { FaArrowRight } from "react-icons/fa6";
 const ProjectCard = ({ project }) => {
   return (
     <div className="  shadow-xl flex flex-col-reverse    bg-card-bg   font-dm-sans mt-6 rounded-2xl w-full  max-w-3xl ">
@@ -42,7 +41,7 @@ const ProjectCard = ({ project }) => {
               className="group ml-2 text-[1.1rem] inline-flex items-center text-theme-green font-semibold  gap-2 rounded-sm px-2 "
             >
               <span>Visit Site </span>
-              <GoArrowRight className="  -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 " />
+              <FaArrowRight className="  -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 " />
             </a>
           )}
         </div>
