@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { GoArrowRight } from "react-icons/go";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -29,10 +30,21 @@ const ProjectCard = ({ project }) => {
             );
           })}
         </div> */}
-        <div className="  p-1 mt-2      text-black px-2    ">
+        <div className="    p-1 mt-2  flex items-center   font-dm-sans gap-4 sm:gap-7 text-black px-2    ">
           <a href={project.githubLink} alt={project.name} target="_blank">
             <FaGithub size={24} />
           </a>
+          {project.liveLink && (
+            <a
+              href={project.liveLink}
+              alt={project.name}
+              target="_blank"
+              className="group ml-2 text-[1.1rem] inline-flex items-center  font-medium   gap-1 rounded-sm px-2 text-theme-green"
+            >
+              <span>Live Site </span>
+              <GoArrowRight className=" opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 " />
+            </a>
+          )}
         </div>
       </div>
       <div className="rounded-2xl      overflow-hidden flex items-center  ">
