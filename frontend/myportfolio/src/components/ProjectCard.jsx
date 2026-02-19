@@ -30,7 +30,7 @@ const ProjectCard = ({ project }) => {
             );
           })}
         </div> */}
-        <div className="    p-1 mt-2  flex items-center   font-dm-sans gap-4 sm:gap-7 text-black px-2    ">
+        <div className="    p-1 mt-2  flex items-center   font-dm-sans gap-4 sm:gap- text-black px-2    ">
           <a href={project.githubLink} alt={project.name} target="_blank">
             <FaGithub size={24} />
           </a>
@@ -39,10 +39,10 @@ const ProjectCard = ({ project }) => {
               href={project.liveLink}
               alt={project.name}
               target="_blank"
-              className="group ml-2 text-[1.1rem] inline-flex items-center  font-medium   gap-1 rounded-sm px-2 text-theme-green"
+              className="group ml-2 text-[1.1rem] inline-flex items-center text-theme-green font-semibold  gap-2 rounded-sm px-2 "
             >
-              <span>Live Site </span>
-              <GoArrowRight className=" opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 " />
+              <span>Visit Site </span>
+              <GoArrowRight className="  -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 " />
             </a>
           )}
         </div>
